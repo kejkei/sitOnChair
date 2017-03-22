@@ -5,8 +5,8 @@
     <title>Sit On Chair</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     
@@ -16,8 +16,13 @@
             
             <p>SIT <span>ON</span> CHAIR</p>
             <ul>
-                <li>O FIRMIE</li>
-                <!--PLUS lista zagniezdzona: Aktualnosci, Nasz team, Historia.-->
+                <li>O FIRMIE
+                    <ul class="inside_menu">
+                        <li>Aktualnosci</li>
+                        <li>Nasz team</li>
+                        <li>Historia</li>
+                </ul>
+                </li>
                 <li>GALERIA</li>
                 <li>KONTAKT</li>
             </ul>
@@ -43,9 +48,9 @@
                 <h1>
                     SIT <span>ON</span> OUR <span>CHAIR</span>
                 </h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta volutpat odio, sit amet finibus orci gravida sed. Curabitur viverra sagittis velit vel efficitur.
-                </p>
+                <div class="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta volutpat odio, sit amet finibus orci gravida sed. Curabitur viverra sagittis velit vel efficitur. Curabitur viverra sagittis velit vel efficitur.
+                </div>
                 <button>
                     ZOBACZ WIECEJ
                 </button>
@@ -54,33 +59,41 @@
             <div class="arrow_right">
             &gt;
             </div>
-            
-            
-
         
         </article>
     </section>
      
     <section>
     
-        <article class="container row">
+        <article class="container row ofert">
             
-            <div class="claire">
+            <div class="child claire">
                 <img src="images/box1_img.jpg">
-                <h3>
-                    Chair CLAIRE
-                </h3>
+        
+                 <div class="background">
+                </div>   
+                    <h3>
+                        Chair CLAIR
+                    </h3>  
+                
             </div>
-            <div class="margarita">
+            
+            
+            <div class="child margarita">
                 <img src="images/box2_img.jpg">
+                
+                <div class="background">
+                </div>  
+     
                 <h3>
                     Chair MARGARITA
                 </h3>
             </div>
-            <div class="inputs">
-                <p>
-                    Find all inputs
-                </p>
+            <div class="child inputs">
+                
+                <h3>
+                    Finds all inputs
+                </h3>
                 <br>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta volutpat odio, sit amet finibus orci gravida sed. Curabitur viverra sagittis velit vel efficitur.

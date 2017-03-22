@@ -1,6 +1,9 @@
+$primary-color: rgb(48, 185, 159);
+
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: "Raleway", sans-serif;
 }
@@ -18,26 +21,22 @@ header {
     color: white; 
     height: 41px;
 }
+
+
 menu {
-    p {
-        span {
-            color: rgb(48, 185, 159);
-        }
-}
-}
-menu {
+    padding: 10px;
+    font-size: 10px;
     p {
     display: inline-block;
     font-size: 15px;
     margin-top: 3px;
     margin-left: -2px;
-    }
-    
+        span {
+            color: $primary-color;
+        }
+    }   
 }
-menu {
-    padding: 10px;
-    font-size: 10px;
-}
+
 ul {
     list-style-type: none;
     float: right;
@@ -73,7 +72,7 @@ h1 {
 }
 h1 {
     span {
-    color: rgb(48, 185, 159);
+    color: $primary-color;
     font-weight: 700;
     }
 }
@@ -85,14 +84,14 @@ h1 {
     font-weight: 300;
     margin-left: 7px;
     position: absolute;
-    color: rgb(48, 185, 159);
+    color: $primary-color;
 }
 .arrow_right {
     float: right;
     display: inline-block;
     margin-top: -171px;
     font-size: 80px;
-    color: rgb(48, 185, 159);
+    color: $primary-color;
     margin-right: 25px;
     font-weight: 300;
 }
@@ -107,12 +106,15 @@ h1 {
     float: left;
 }
 .next_to_chair {
-    p {
+    .paragraph {
         display: block;
         font-size: 14px;
         margin-right: 175px;
         margin-top: 29px;
         line-height: 1.5em;
+        text-align: center;
+        position: relative;
+        right: 27px;
     }
     button {
         height: 52px;
@@ -122,39 +124,114 @@ h1 {
         border-radius: 10px;
         font-size: 24px;
         letter-spacing: 1px;
-        background-color: rgb(48, 185, 159);
+        background-color: $primary-color;
         color: white;
-        border-color: rgb(48, 185, 159);
+        border-color: $primary-color;
         font-family: "Raleway";
     }
 }
+%placeholder_underline {
+        content: '';
+        width: 138px;
+        border-bottom: 7px solid $primary-color;
+        display: block;
+        }  
+%placeholder_background {
+    background-color: white;
+    height: 25%;
+    opacity: 0.3;
+    position: relative;
+}
 
-.claire {
-    float: left;
-    display: block;
+.ofert {
+    display: flex;
+    height: 353px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .child {
+            height: 72%;
+            width: 31%;
+                &.claire {
+                    img {
+                        margin-top: -23px;
+                        margin-left: -44px;
+                    }
+                    h3 {
+                        position: relative;
+                        top: -130px;
+                        left: -26px;
+                        &:after {
+                            @extend %placeholder_underline;
+                            }  
+                        }
+                    .background {
+                        @extend %placeholder_background;
+                        top: -80px;
+                        left: -44px;
+                    }
+                    }
+                &.margarita {
+                    img {
+                        margin-top: -23px;
+                        margin-left: -21px;
+                    }
+                    h3 {
+                        position: relative;
+                        top: -129px;
+                        left: -7px;
+                        &:after {
+                            @extend %placeholder_underline;
+                            }  
+                        
+                    }
+                    .background {
+                        @extend %placeholder_background;
+                        top: -80px;
+                        left: -21px;  
+                    }
+    }
+                &.inputs {
+                    border: 1px solid lightgray;
+                    margin-top: -46px;
+                    margin-right: -26px;
+                    width: 31.5%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                        h3 {
+                            @extend %placeholder_underline;
+                            font-weight: 600;
+                            position: relative;
+                            top: 28px;
+                            left: -79px;
 }
-.inputs {
-    width: 30%;
-    float: right;
-    display: block;
-    margin-top: 54px;
-    font-size: 15px;
-    line-height: 1.39;
-    margin-right: 11px;
-    padding-right: 27px;
-    border: 1px solid lightgray;
-}
-.margarita {
-    display: inline-block;
-}
-.claire img {
-    max-width: 100%;
-    margin-top: 27px;
-    margin-left: 9px;
-}
-.margarita img {
-    max-width: 100%;
-    margin-top: 27px;
-    margin-left: 29px;;
-}
+                        }
+                        p {
+                            font-size: 0.9em;
+                            position: relative;
+                            line-height: 1.4em;
+                            &:first-of-type {
+                                top: 24px;
+                                left: 23px;   
+                                }
+                            &:last-of-type {
+                                top: 28px;
+                                left: 24px;
+                            }
+                        }
+
+                    }
+                
+        }
+    
+
+ 
+
+
+
+
+
+
+
 
