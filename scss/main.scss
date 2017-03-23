@@ -1,11 +1,15 @@
 $primary-color: rgb(48, 185, 159);
+$background-color: #f1f1f1;
+$popular-color: #c4c4c4;
+$font: "Raleway", sans-serif;
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: $font;
+    height: 100vh;
 }
 .row::after::before {
     content: "";
@@ -34,22 +38,21 @@ menu {
         span {
             color: $primary-color;
         }
-    }   
+    } 
+    ul {
+            list-style-type: none;
+            float: right;
+            font-size: 15px;
+             li {
+                display: inline-block;
+                font-weight: 500;
+                margin-top: 4px;
+                margin-right: 25px;
+                font-size: 14px;
+                margin-left: -6px;
+                letter-spacing: 0.05em;
 }
-
-ul {
-    list-style-type: none;
-    float: right;
-    font-size: 15px;
- }
-li {
-    display: inline-block;
-    font-weight: 500;
-    margin-top: 4px;
-    margin-right: 25px;
-    font-size: 14px;
-    margin-left: -6px;
-    letter-spacing: 0.05em;
+ } 
 }
     
 .first {
@@ -131,11 +134,17 @@ h1 {
     }
 }
 %placeholder_underline {
-        content: '';
-        width: 138px;
-        border-bottom: 7px solid $primary-color;
-        display: block;
-        }  
+    content: '';
+    width: 138px;
+    border-bottom: 7px solid $primary-color;
+    display: block;
+}  
+%placeholder_underline1 {
+    content: '';
+    width: 323px;
+    border-bottom: 9px solid #30b99f;
+    display: block;
+}  
 %placeholder_background {
     background-color: white;
     height: 25%;
@@ -145,7 +154,7 @@ h1 {
 
 .ofert {
     display: flex;
-    height: 353px;
+    height: 349px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -224,6 +233,50 @@ h1 {
                     }
                 
         }
+.section_three {
+    background-color: $background-color;
+    height: 725px;
+    h2 {
+        @extend %placeholder_underline1;
+        position: relative;
+        left: 87px;
+        top: 40px;
+        font-size: 1.4em;
+        line-height: 1.5em;
+    }
+}
+
+.price {
+    height: 70%;
+.plan {
+    border: 2px solid $popular-color;
+    height: 500px;
+    width: 329px;
+    display: inline-block;
+    margin-top: 115px;
+    &.basic {
+        float: left;
+        margin-left: 5px;
+    }
+    &.standard {
+        float: left;
+        margin-left: 34px;
+        
+    }
+    &.advanced {
+        float: right;
+        margin-right: 24px;
+    }   
+}
+}
+.circle_in {
+    width: 25px;
+    height: 25px;
+    background-color: $popular-color;
+    border-radius: 50%;
+    
+}
+
     
 
  
