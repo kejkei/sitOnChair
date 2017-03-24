@@ -436,15 +436,143 @@ h1 {
         }
     }
 }
+.four {
+    height: 560px;
+    background-color: white;
+    h2 {
+        font-size: 21px;
+        position: relative;
+        top: 37px;
+        left: 93px;
+        @extend %placeholder_underline1;
+    }
 
+    .form {
+        display: inline-block;
+        width: 55%;
+    }
+    .accept {
+        float: right;
+        display: inline-block;
+        width: 40%;
+    }
+    
+}
 
+.form {
+    margin-top: 82px;
+    margin-left: 11px;
+    input {
+        height: 66px;
+        width: 630px;
+        border: 0.5px solid $primary-color;
+        &:nth-child(2n) {
+            margin-top: 26px;
+        }
+        &:nth-child(2n+3){
+            margin-top: 26px;
+            height: 188px;
+        }
+    }
 
- 
-
-
- 
-
-
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+     position: relative;
+     top: 8px;
+     left: 10px;
+     font-size: 33px;
+     font-family: $font;
+     font-weight: 100;
+     color: $popular-color;
+ }
+ ::-moz-placeholder { /* Firefox 19+ */
+     font-size: 33px;
+     font-family: $font;
+     font-weight: 100;
+     color: $popular-color;
+ }
+ :-ms-input-placeholder { /* IE 10+ */
+     font-size: 33px;
+     font-family: $font;
+     font-weight: 100;
+     color: $popular-color;
+ }
+ :-moz-placeholder { /* Firefox 18- */
+     font-size: 33px;
+     font-family: $font;
+     font-weight: 100;
+     color: $popular-color;
+}
+.accept {
+    img {
+        margin-top: 53px;
+        margin-left: 63px;
+    }
+    .box {
+        width: 50px;
+        height: 50px;
+        border: 1px solid $primary-color;
+        margin-top: 29px;
+        margin-left: 52px;
+    }
+    .checked {
+        position: relative;
+        top: -99px;
+        left: -10px;
+    }
+    span {
+        position: relative;
+        display: block;
+        top: -143px;
+        font-size: 19px;
+        left: 115px;
+    }
+    .btn_last a {
+        background-color: $primary-color;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        top: -87px;
+        left: 51px;
+        padding: 17px 118px;
+        border-radius: 9px;
+        font-size: 30px;
+    }
+}
+footer {
+    background-color: white;
+    color: darkgray;
+}
+.last {
+    .copyright {
+        float: left;
+        position: relative;
+        left: 86px;
+        top: 27px;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+    }
+    .brand {
+        float: right;
+        font-size: 19px;
+        position: relative;
+        right: 99px;
+        top: -17px;
+        letter-spacing: 0.1em;
+            strong {
+                font-size: 19px;
+        }
+    }
+    ul {
+        list-style-type: none;
+        position: relative;
+        left: 371px;
+        top: 11px;
+            li {
+                display: inline-block;
+        }
+    }
+}
 
 
 
